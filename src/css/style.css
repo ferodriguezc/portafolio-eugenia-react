@@ -12,26 +12,36 @@
   font-size: clamp(
     24px,
     15vw,
-    100px
+    80px
   ); /* El tamaño será al menos 24px, se adaptará a la ventana, pero no superará los 72px */
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
 }
 
 .bro-subtitulo {
-    font-family: "bro", sans-serif;
-    font-size: clamp(30px, 5vw, 50px); /* Ajusta los valores según necesites */
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
+  font-family: "bro", sans-serif;
+  font-size: clamp(30px, 100vw, 40px); /* Ajusta los valores según necesites */
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+.bro-subtitulo-2 {
+  font-family: "bro", sans-serif;
+  font-size: clamp(15px, 5vw, 25px); /* Ajusta los valores según necesites */
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; /* Puedes usar valores como normal, bold, bolder o lighter */
+  font-weight: 600; /* Valores numéricos de 100 a 900 */
+}
 
 .bro-navtext {
   font-family: "bro", sans-serif;
   font-size: clamp(
     1px,
     90vw,
-    25px
+    19px
   ); /* El tamaño será al menos 24px, se adaptará a la ventana, pero no superará los 72px */
   text-transform: uppercase;
   text-align: center;
@@ -52,7 +62,7 @@
 
 /* styles.css */
 .bg-custom {
-  background-color: black;
+  background-color:rgb(0, 0, 0);
   position: relative; /* Necesario para el posicionamiento del ::after */
   background-position: center;
   overflow: hidden; /* Asegura que el pseudoelemento no se desborde del contenedor */
@@ -61,7 +71,7 @@
 
 .bg-custom::after {
   content: ""; /* Necesario para que el pseudoelemento se muestre */
-  background-image: url(../images/flores.jpg);
+  background-image: url(/public/images/flores.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
@@ -77,16 +87,9 @@
   z-index: 1; /* Asegura que esté por encima del pseudoelemento ::after */
 }
 
-.navbar {
-  background-image: url(/src/images/image.png);
-  background-repeat: no-repeat;
-  background-size: 100%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
-  background-position: top; /* Centra la imagen dentro del navbar */
-  border: 1px solid whitesmoke;
-}
 
 .navbar > .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: end;
 }

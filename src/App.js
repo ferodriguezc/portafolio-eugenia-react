@@ -13,8 +13,8 @@ function App() {
   return (
     <div className='bg-custom bro'>
       <div className="content-container">
-      <Navbar className =""/>
-      <About />
+      <Navbar/>
+      <About/>
       <Skill/>
       <Projects />
       <Footer />
