@@ -12,12 +12,11 @@
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "postcss": ">=8.4.31",
+    "nth-check": ">=2.0.1"
   },
-
-  
-  "homepage": "https://github.com/ferodriguezc/portafolio-eugenia-react/tree/master/build",
-
+  "homepage": "https://github.com/ferodriguezc/portafolio-eugenia-react/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -44,5 +43,4 @@
       "last 1 safari version"
     ]
   }
-
 }
