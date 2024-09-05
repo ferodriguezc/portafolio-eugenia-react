@@ -30,8 +30,8 @@
   font-family: "bro", sans-serif;
   font-size: clamp(
     1px,
-    100vw,
-    30px
+    90vw,
+    25px
   ); /* El tamaño será al menos 24px, se adaptará a la ventana, pero no superará los 72px */
   text-transform: uppercase;
   text-align: center;

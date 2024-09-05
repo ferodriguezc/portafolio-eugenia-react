@@ -16,10 +16,8 @@
     "postcss": ">=8.4.31",
     "nth-check": ">=2.0.1"
   },
-  "homepage": "https://github.com/ferodriguezc/portafolio-eugenia-react/",
+ 
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

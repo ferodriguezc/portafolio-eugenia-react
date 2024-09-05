@@ -9,7 +9,7 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#home" className="text-white">Home</Nav.Link>
+            <Nav.Link href="#home" className="text-white">inicio</Nav.Link>
             <Nav.Link href="#about" className="text-white">Sobre mi</Nav.Link>
             <Nav.Link href="#projects" className="text-white">Proyectos</Nav.Link>
             <Nav.Link href="#contact" className="text-white">Contactos</Nav.Link>
