@@ -1,0 +1,92 @@
+/* font */
+
+@font-face {
+  font-family: "bro";
+  src: url("/src/font/bro-2.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bro-titulo {
+  font-family: "bro", sans-serif;
+  font-size: clamp(
+    24px,
+    15vw,
+    100px
+  ); /* El tamaño será al menos 24px, se adaptará a la ventana, pero no superará los 72px */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bro-subtitulo {
+    font-family: "bro", sans-serif;
+    font-size: clamp(30px, 5vw, 50px); /* Ajusta los valores según necesites */
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+
+.bro-navtext {
+  font-family: "bro", sans-serif;
+  font-size: clamp(
+    1px,
+    100vw,
+    30px
+  ); /* El tamaño será al menos 24px, se adaptará a la ventana, pero no superará los 72px */
+  text-transform: uppercase;
+  text-align: center;
+  color: azure !important;
+}
+
+.text-star {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* styles.css */
+.bg-custom {
+  background-color: black;
+  position: relative; /* Necesario para el posicionamiento del ::after */
+  background-position: center;
+  overflow: hidden; /* Asegura que el pseudoelemento no se desborde del contenedor */
+  color: aliceblue;
+}
+
+.bg-custom::after {
+  content: ""; /* Necesario para que el pseudoelemento se muestre */
+  background-image: url(../images/flores.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  position: absolute; /* Posiciona el ::after dentro del contenedor */
+  top: 0;
+  right: 0%; /* Centra horizontalmente el pseudoelemento */
+  z-index: 0; /* Asegúrate de que esté debajo de los demás elementos */
+}
+
+.content-container {
+  position: relative; /* Asegura que los elementos dentro estén por encima del ::after */
+  z-index: 1; /* Asegura que esté por encima del pseudoelemento ::after */
+}
+
+.navbar {
+  background-image: url(/src/images/image.png);
+  background-repeat: no-repeat;
+  background-size: 100%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  background-position: top; /* Centra la imagen dentro del navbar */
+  border: 1px solid whitesmoke;
+}
+
+.navbar > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
